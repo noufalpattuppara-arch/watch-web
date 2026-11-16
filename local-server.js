@@ -59,7 +59,15 @@ const server = http.createServer((req, res) => {
 
   fs.stat(filePath, (err, stats) => {
     if (err || !stats.isFile()) {
-      // Fallback to index.html for SPA routing if requested path not found
+      // If requesting a static file with an extension, return real 404 (NEVER return HTML for images)
+      const ext = path.extname(pathname).toLowerCase();
+      if (ext && ext !== '.html') {
+        res.writeHead(404, { 'Content-Type': 'text/plain' });
+        res.end('404 Not Found: ' + pathname);
+        return;
+      }
+
+      // Fallback to index.html for SPA page navigation
       const indexPath = path.join(ROOT_DIR, 'index.html');
       fs.readFile(indexPath, (readErr, content) => {
         if (readErr) {
