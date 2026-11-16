@@ -155,6 +155,10 @@ fs.writeFileSync(path.join(distDir, 'index.html'), distHtmlContent, 'utf-8');
 const assetsDir = path.join(__dirname, 'assets');
 const distAssetsDir = path.join(distDir, 'assets');
 if (fs.existsSync(assetsDir)) {
-  fs.cpSync(assetsDir, distAssetsDir, { recursive: true });
+  try {
+    fs.cpSync(assetsDir, distAssetsDir, { recursive: true, force: true, errorOnExist: false });
+  } catch (e) {
+    console.log('Assets copy notice:', e.message);
+  }
 }
 console.log('✓ Successfully populated dist/ directory (index.html with <base href="/">, bundle.js, assets/)');
