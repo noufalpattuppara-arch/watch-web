@@ -1189,10 +1189,11 @@ function FeaturedCollection({
                     src={product.image}
                     alt={product.name}
                     className="watch-img w-full h-full object-contain filter drop-shadow-xl"
-                    loading="lazy"
                     onError={(e) => {
-                      // Fallback to crisp local SVG artwork
-                      e.currentTarget.src = fallbackImg;
+                      if (!e.currentTarget.getAttribute('data-fallback')) {
+                        e.currentTarget.setAttribute('data-fallback', 'true');
+                        e.currentTarget.src = fallbackImg;
+                      }
                     }}
                   />
                   
