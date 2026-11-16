@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="100%" height="100%">
+  <defs>
+    <linearGradient id="editorialGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a2421"/>
+      <stop offset="40%" stop-color="#141416"/>
+      <stop offset="100%" stop-color="#08080a"/>
+    </linearGradient>
+    <linearGradient id="warmSunlight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4af37" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="modelSkin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0b196"/>
+      <stop offset="50%" stop-color="#c9977c"/>
+      <stop offset="100%" stop-color="#a4755d"/>
+    </linearGradient>
+    <linearGradient id="linenShirt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5efe6"/>
+      <stop offset="70%" stop-color="#ded4c3"/>
+      <stop offset="100%" stop-color="#c2b6a0"/>
+    </linearGradient>
+    <linearGradient id="wristSteel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#8e949c"/>
+      <stop offset="100%" stop-color="#cfd4dc"/>
+    </linearGradient>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#editorialGrad)"/>
+  <rect width="1200" height="900" fill="url(#warmSunlight)"/>
+
+  <!-- Editorial Architectural Background Lines -->
+  <g stroke="rgba(255,255,255,0.05)" stroke-width="1.5">
+    <line x1="200" y1="0" x2="200" y2="900"/>
+    <line x1="450" y1="0" x2="450" y2="900"/>
+    <line x1="850" y1="0" x2="850" y2="900"/>
+    <circle cx="800" cy="400" r="300"/>
+  </g>
+
+  <!-- Silhouette & Portrait of Stylish Male Ambassador wearing Vouvry watch -->
+  <g transform="translate(680, 200)">
+    <!-- Shoulders & Linen Shirt -->
+    <path d="M -180 420 L -90 280 L 10 240 L 180 260 L 280 420 L 320 700 L -250 700 Z" fill="url(#linenShirt)"/>
+    <!-- Collar & Open Neck -->
+    <path d="M -20 250 L 50 360 L 120 250 Z" fill="url(#modelSkin)"/>
+    <polygon points="-30,240 60,370 20,380 -50,260" fill="#ded4c3" stroke="#b0a28b" stroke-width="2"/>
+    <polygon points="130,240 40,370 80,380 150,260" fill="#ded4c3" stroke="#b0a28b" stroke-width="2"/>
+
+    <!-- Neck & Jawline -->
+    <path d="M 0 160 L 100 160 L 110 260 L -10 260 Z" fill="url(#modelSkin)"/>
+    <path d="M -20 80 C -20 0 120 0 120 80 C 120 160 50 200 50 200 C 50 200 -20 160 -20 80 Z" fill="url(#modelSkin)"/>
+    
+    <!-- Stylized Dark Hair -->
+    <path d="M -35 70 C -30 -30 135 -30 140 70 C 110 50 80 40 50 45 C 20 40 -10 50 -35 70 Z" fill="#141416"/>
+    
+    <!-- Arm Raised Showing Luxury Timepiece on Wrist -->
+    <path d="M -120 460 C -90 410 -40 380 20 430 L 0 540 C -50 520 -100 520 -120 460 Z" fill="url(#modelSkin)"/>
+    <path d="M -20 420 C 40 370 120 420 100 510 L 0 540 Z" fill="url(#modelSkin)"/>
+
+    <!-- The Watch on Wrist -->
+    <!-- Steel Link Strap around wrist -->
+    <rect x="-35" y="445" width="60" height="26" rx="4" fill="url(#wristSteel)" stroke="#444" stroke-width="1.5" transform="rotate(-15)"/>
+    <!-- Watch Case & Black Dial -->
+    <circle cx="-5" cy="455" r="28" fill="url(#wristSteel)" stroke="#222" stroke-width="2"/>
+    <circle cx="-5" cy="455" r="22" fill="#0c0e12"/>
+    <!-- Dial Detail -->
+    <circle cx="-5" cy="455" r="8" fill="#181a20" stroke="#777" stroke-width="0.8"/>
+    <!-- Hands & Red Chrono Hand -->
+    <line x1="-5" y1="455" x2="8" y2="445" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+    <line x1="-5" y1="455" x2="-15" y2="442" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="-5" y1="455" x2="-2" y2="436" stroke="#DA291C" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="-5" cy="455" r="2.5" fill="#DA291C"/>
+    <!-- Glass Flare -->
+    <path d="M -22 445 Q -5 435 12 445 A 22 22 0 0 0 -22 445 Z" fill="#ffffff" opacity="0.3"/>
+  </g>
+
+  <!-- Swiss Made Heritage Crest in Corner -->
+  <g transform="translate(100, 720)">
+    <rect x="0" y="0" width="36" height="36" fill="#DA291C" rx="4"/>
+    <rect x="15" y="8" width="6" height="20" fill="#ffffff"/>
+    <rect x="8" y="15" width="20" height="6" fill="#ffffff"/>
+    <text x="50" y="16" font-family="'Montserrat', sans-serif" font-size="12" font-weight="800" fill="#ffffff" letter-spacing="2">SWISS HAUTE HORLOGERIE</text>
+    <text x="50" y="32" font-family="'Montserrat', sans-serif" font-size="9" font-weight="500" fill="#a0a5ad" letter-spacing="1.5">LE LOCLE &amp; GENÈVE • 1888</text>
+  </g>
+</svg>
