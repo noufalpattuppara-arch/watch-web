@@ -149,16 +149,7 @@ ${bundleCode}
 fs.writeFileSync(path.join(__dirname, 'index.html'), indexHtmlContent, 'utf-8');
 console.log('✓ Successfully updated index.html with inline React bundle (' + Math.round(indexHtmlContent.length / 1024) + ' KB)');
 
-// Also write index.html to dist/index.html and copy assets for hosts that serve dist/
+// Also write index.html to dist/index.html
 const distHtmlContent = indexHtmlContent.replace('<head>', '<head>\n  <base href="/">');
 fs.writeFileSync(path.join(distDir, 'index.html'), distHtmlContent, 'utf-8');
-const assetsDir = path.join(__dirname, 'assets');
-const distAssetsDir = path.join(distDir, 'assets');
-if (fs.existsSync(assetsDir)) {
-  try {
-    fs.cpSync(assetsDir, distAssetsDir, { recursive: true, force: true, errorOnExist: false });
-  } catch (e) {
-    console.log('Assets copy notice:', e.message);
-  }
-}
-console.log('✓ Successfully populated dist/ directory (index.html with <base href="/">, bundle.js, assets/)');
+console.log('✓ Successfully populated dist/ directory (index.html with <base href="/">, bundle.js)');
