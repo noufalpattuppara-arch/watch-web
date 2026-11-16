@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 850" width="100%" height="100%">
+  <defs>
+    <radialGradient id="meshGrad" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#2a303c"/>
+      <stop offset="50%" stop-color="#141822"/>
+      <stop offset="100%" stop-color="#080a0f"/>
+    </radialGradient>
+    <linearGradient id="netRope" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#b0b5be"/>
+      <stop offset="100%" stop-color="#606670"/>
+    </linearGradient>
+    <linearGradient id="silverWatchBezel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="30%" stop-color="#d4d8e0"/>
+      <stop offset="60%" stop-color="#7a808a"/>
+      <stop offset="100%" stop-color="#adb2ba"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1920" height="850" fill="url(#meshGrad)"/>
+
+  <!-- Athletic Net / Precision Mesh Rope Structure (Inspired by Reference 5) -->
+  <g stroke="url(#netRope)" stroke-width="4" opacity="0.4" fill="none">
+    <path d="M 200 -50 C 400 200 400 500 200 900"/>
+    <path d="M 450 -50 C 650 200 650 500 450 900"/>
+    <path d="M 700 -50 C 900 200 900 500 700 900"/>
+    <path d="M 950 -50 C 1150 200 1150 500 950 900"/>
+    <path d="M 1200 -50 C 1400 200 1400 500 1200 900"/>
+    <path d="M 1450 -50 C 1650 200 1650 500 1450 900"/>
+    <path d="M 1700 -50 C 1900 200 1900 500 1700 900"/>
+
+    <path d="M -50 200 C 500 100 1200 100 1950 200"/>
+    <path d="M -50 450 C 500 350 1200 350 1950 450"/>
+    <path d="M -50 700 C 500 600 1200 600 1950 700"/>
+  </g>
+
+  <!-- Large Central Luxury Timepiece Framing through the Mesh -->
+  <g transform="translate(1350, 420) scale(1.15)">
+    <!-- Case & Silicone Sports Strap -->
+    <path d="M -130 -380 L 130 -380 L 120 -180 L -120 -180 Z" fill="#1b1d22" stroke="#333" stroke-width="2"/>
+    <path d="M -120 180 L 120 180 L 130 380 L -130 380 Z" fill="#1b1d22" stroke="#333" stroke-width="2"/>
+
+    <!-- Rugged Chronograph Case -->
+    <path d="M -150 -200 C -150 -150 150 -150 150 -200 L 190 -90 C 220 0 220 0 190 90 L 150 200 C 150 150 -150 150 -150 200 L -190 90 C -220 0 -220 0 -190 -90 Z" 
+          fill="url(#silverWatchBezel)" stroke="#3a3e48" stroke-width="3"/>
+
+    <!-- Crown & Pushers with Red Accents -->
+    <rect x="195" y="-90" width="22" height="32" rx="4" fill="url(#silverWatchBezel)"/>
+    <rect x="202" y="-30" width="30" height="60" rx="4" fill="url(#silverWatchBezel)"/>
+    <rect x="195" y="60" width="22" height="32" rx="4" fill="url(#silverWatchBezel)"/>
+    <line x1="200" y1="-74" x2="200" y2="-74" stroke="#DA291C" stroke-width="6"/>
+
+    <!-- Ceramic Outer Bezel -->
+    <circle cx="0" cy="0" r="175" fill="#f0f2f5" stroke="#777e8a" stroke-width="3"/>
+    <circle cx="0" cy="0" r="158" fill="#e2e5eb" stroke="#a0a6b0" stroke-width="1.5"/>
+
+    <!-- Dial Surface -->
+    <circle cx="0" cy="0" r="152" fill="#f8f9fb"/>
+
+    <!-- Subdials with NBA Red/Blue Accents -->
+    <circle cx="-60" cy="0" r="38" fill="#e5e9f0" stroke="#8d94a0" stroke-width="1"/>
+    <circle cx="60" cy="0" r="38" fill="#e5e9f0" stroke="#8d94a0" stroke-width="1"/>
+    <circle cx="0" cy="65" r="36" fill="#e5e9f0" stroke="#8d94a0" stroke-width="1"/>
+
+    <!-- Brand Typography on Dial -->
+    <text x="0" y="-75" font-family="'Montserrat', sans-serif" font-size="14" font-weight="900" fill="#111" text-anchor="middle" letter-spacing="3">VOUVRY</text>
+    <text x="0" y="-62" font-family="'Montserrat', sans-serif" font-size="7" font-weight="700" fill="#777" text-anchor="middle" letter-spacing="2">SWISS 1888</text>
+
+    <!-- Hands -->
+    <line x1="0" y1="0" x2="-60" y2="-65" stroke="#111" stroke-width="5" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="80" y2="-70" stroke="#111" stroke-width="4" stroke-linecap="round"/>
+    <line x1="0" y1="35" x2="0" y2="-140" stroke="#DA291C" stroke-width="2.2" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="5" fill="#DA291C"/>
+
+    <!-- Glare reflection -->
+    <path d="M -100 -100 Q 0 -50 100 -100 A 150 150 0 0 0 -100 -100 Z" fill="#ffffff" opacity="0.3"/>
+  </g>
+
+  <!-- Foreground Net Rope overlapping the watch for authentic depth -->
+  <g stroke="url(#netRope)" stroke-width="8" opacity="0.65" fill="none">
+    <path d="M 1250 100 C 1380 320 1380 580 1250 820"/>
+    <path d="M 1480 80 C 1600 350 1600 620 1480 840"/>
+  </g>
+
+  <!-- Official Partnership Emblem (bottom right) -->
+  <g transform="translate(1550, 700)">
+    <rect x="0" y="0" width="300" height="80" rx="8" fill="rgba(10, 14, 20, 0.85)" stroke="rgba(255, 255, 255, 0.15)"/>
+    <!-- Swiss Flag Box -->
+    <rect x="20" y="20" width="40" height="40" fill="#DA291C" rx="4"/>
+    <rect x="36" y="28" width="8" height="24" fill="#ffffff"/>
+    <rect x="28" y="36" width="24" height="8" fill="#ffffff"/>
+    <text x="75" y="38" font-family="'Montserrat', sans-serif" font-size="13" font-weight="800" fill="#ffffff" letter-spacing="2">OFFICIAL TIMEKEEPER</text>
+    <text x="75" y="54" font-family="'Montserrat', sans-serif" font-size="10" font-weight="600" fill="#DA291C" letter-spacing="1">WORLD CHAMPIONSHIP TOUR</text>
+  </g>
+</svg>

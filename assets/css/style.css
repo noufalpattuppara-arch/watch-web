@@ -1,0 +1,255 @@
+/* VOUVRY GENÈVE - Premium Luxury Swiss Watch Aesthetic */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,600&display=swap');
+
+:root {
+  --font-montserrat: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --color-black: #080808;
+  --color-jet: #0f0f11;
+  --color-dark-grey: #1a1a1c;
+  --color-mid-grey: #767676;
+  --color-light-grey: #f4f4f6;
+  --color-border-light: #e8e8ea;
+  --color-border-dark: #232326;
+  --color-swiss-red: #DA291C;
+  --color-gold: #c5a880;
+  --color-silver: #d1d5db;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-montserrat);
+  scroll-behavior: smooth;
+  color: #111111;
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: var(--font-montserrat);
+  background-color: #ffffff;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d0d0f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333338;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #DA291C;
+}
+
+/* Luxury Editorial Typography */
+.tracking-ultra-wide {
+  letter-spacing: 0.28em;
+}
+
+.tracking-luxury {
+  letter-spacing: 0.18em;
+}
+
+/* Luxury Button Animations */
+.btn-luxury-primary {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.95rem 2.2rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 1;
+}
+
+.btn-luxury-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: -1;
+}
+
+.btn-luxury-primary:hover {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.btn-luxury-primary:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.btn-luxury-outline {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.95rem 2.2rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(8px);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 1;
+}
+
+.btn-luxury-outline:hover {
+  color: #000000;
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+.btn-luxury-dark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.95rem 2.2rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #080808;
+  border: 1px solid #080808;
+  transition: all 0.35s ease;
+}
+
+.btn-luxury-dark:hover {
+  background-color: #222226;
+  border-color: #222226;
+}
+
+/* Product Card Subtle Zoom & Clean Lighting */
+.watch-card {
+  transition: all 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.watch-card:hover .watch-img {
+  transform: scale(1.05);
+}
+
+.watch-img {
+  transition: transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Heart Pulse Animation */
+@keyframes heartPulse {
+  0% { transform: scale(1); }
+  45% { transform: scale(1.35); }
+  75% { transform: scale(0.92); }
+  100% { transform: scale(1); }
+}
+
+.animate-heart-pulse {
+  animation: heartPulse 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Swiss Cross Logo Emblem */
+.swiss-cross-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #DA291C;
+  color: #ffffff;
+  font-weight: 900;
+}
+
+/* Background Gradients */
+.bg-radial-vignette {
+  background: radial-gradient(circle at center, rgba(30, 30, 35, 0.4) 0%, rgba(8, 8, 10, 0.95) 85%);
+}
+
+.bg-metallic-silver {
+  background: linear-gradient(135deg, #fafafa 0%, #ededf0 50%, #e1e1e6 100%);
+}
+
+.bg-studio-canvas {
+  background-color: #f7f7f9;
+}
+
+/* Carousel Animations */
+.carousel-track {
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Massive Brand Wordmark in Footer (echoing T+ TISSOT screenshot) */
+.monumental-logo-text {
+  font-size: clamp(3rem, 15vw, 15rem);
+  font-weight: 900;
+  line-height: 0.82;
+  letter-spacing: -0.04em;
+  user-select: none;
+}
+
+/* Glassmorphism navigation */
+.nav-glass-scrolled {
+  background-color: rgba(10, 10, 12, 0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Luxury Reveal Utilities */
+.fade-in-up {
+  animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Floating Notification Toast */
+.toast-enter {
+  animation: toastSlide 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes toastSlide {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}

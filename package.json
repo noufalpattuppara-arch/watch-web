@@ -1,0 +1,24 @@
+{
+  "name": "vouvry-geneve-luxury-watch-web",
+  "version": "1.0.0",
+  "description": "Premium luxury Swiss watch brand e-commerce website inspired by Tissot visual aesthetic",
+  "main": "server.js",
+  "scripts": {
+    "start": "agy-node server.js",
+    "dev": "agy-node server.js",
+    "preview": "agy-node server.js",
+    "build": "agy-node build.js",
+    "serve": "agy-node server.js"
+  },
+  "keywords": [
+    "luxury-watch",
+    "ecommerce",
+    "swiss-made",
+    "react",
+    "tailwind",
+    "montserrat",
+    "vouvry-geneve"
+  ],
+  "author": "Antigravity Luxury Team",
+  "license": "MIT"
+}
